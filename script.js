@@ -1,18 +1,20 @@
+const title = document.getElementById("title")
 const button = document.getElementById("resetButton")
+const table = document.getElementById("table")
 
 document.addEventListener("keydown", () => {
     document.getElementById("eventKey").textContent = event.key;
-    document.getElementById("title").textContent = event.keyCode;
     document.getElementById("eventCode").textContent = event.code;
     document.getElementById("eventKeyCode").textContent = event.keyCode;
-    document.getElementById("table").style.display = "flex"
-    document.getElementById("title").style.fontSize = "100px"
-    document.getElementById("resetButton").style.display = "flex"
+    title.style.fontSize = "100px"
+    table.style.display = "flex"
+    button.style.display = "flex"
+    title.textContent = event.keyCode;
 })
 
 button.addEventListener("click", () => {
-    document.getElementById("title").textContent = "Press any key to get the JavaScript event keycode";
-    document.getElementById("table").style.display = "none"
-    document.getElementById("title").style.fontSize = "30px"
-    document.getElementById("resetButton").style.display = "none"
+    title.textContent = "Press any key to get the JavaScript event keycode";
+    title.style.fontSize = "30px"
+    table.style.display = "none"
+    button.style.display = "none"
 })
