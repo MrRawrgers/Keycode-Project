@@ -6,3 +6,5 @@ table {font-size: 30px; display: none; justify-content: space-evenly;}
 
 th {padding: 20px; width: 20vw; background-color: lightgray;}
 td {padding: 10px; background-color: lightgray;}
+
+#resetButton {display: none; justify-content: center; padding: 50px;}
