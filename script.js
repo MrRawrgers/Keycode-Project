@@ -7,12 +7,12 @@ document.addEventListener("keydown", () => {
     document.getElementById("eventKeyCode").textContent = event.keyCode;
     document.getElementById("table").style.display = "flex"
     document.getElementById("title").style.fontSize = "100px"
-    button.style.display = "flex"
+    document.getElementById("resetButton").style.display = "flex"
 })
 
 button.addEventListener("click", () => {
     document.getElementById("title").textContent = "Press any key to get the JavaScript event keycode";
     document.getElementById("table").style.display = "none"
     document.getElementById("title").style.fontSize = "30px"
-    button.style.display = "none"
+    document.getElementById("resetButton").style.display = "none"
 })
